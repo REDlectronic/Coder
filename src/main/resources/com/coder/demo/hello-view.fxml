@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.coder.demo.HelloController">
+    <Label text="Encrypt:"/>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+    <Label text="Enter input"/>
+    <TextField fx:id="InputEnc"/>
+    <Label text="Enter output"/>
+    <TextField fx:id="OutputEnc"/>
+    <Button text="Go" onAction="#ok_enc"/>
+
+
+    <Label text="Decrypt:"/>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+
+    <Label text="Enter input"/>
+    <TextField fx:id="InputDec"/>
+    <Label text="Enter output"/>
+    <TextField fx:id="OutputDec"/>
+    <Button text="Go" onAction="#ok_dec"/>
+
+
+</VBox>
